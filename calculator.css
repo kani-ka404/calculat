@@ -1,0 +1,70 @@
+/* Base styles */
+#calculator {
+    width: 200px;
+    background-color: rgb(206, 206, 206);
+    border: 2.5px solid rgb(103, 103, 103);
+    border-radius: 5px;
+    margin: 20px auto; /* Center horizontally */
+}
+
+#display {
+    margin: 10px auto;
+    width: 80%;
+    font-size: 20px;
+    text-align: right; /* Align text to the right for a calculator display */
+    padding: 5px;
+    border: 1px solid rgb(116, 116, 116);
+    border-radius: 3px;
+    background-color: white;
+    margin-left: 7px;
+}
+
+.button1 {
+    width: 45px;
+    height: 45px;
+    margin: 3px;
+    border-color: rgb(116, 116, 116);
+    background-color: rgb(225, 225, 225);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button1:active {
+    background-color: #585858;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    #calculator {
+        width: 90%; /* Make the calculator width responsive */
+    }
+
+    #display {
+        width: 95%; /* Adjust display width */
+        font-size: 18px; /* Slightly smaller font size for smaller screens */
+    }
+
+    .button1 {
+        width: 40px; /* Smaller button size for smaller screens */
+        height: 40px;
+        margin: 2px;
+    }
+}
+
+@media (max-width: 400px) {
+    #display {
+        font-size: 16px; /* Even smaller font size */
+    }
+
+    .button1 {
+        width: 35px;
+        height: 35px;
+        margin: 1px;
+    }
+}
